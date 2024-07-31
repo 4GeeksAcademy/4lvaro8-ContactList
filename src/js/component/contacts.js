@@ -11,7 +11,7 @@ function Contacts() {
 			{/* image */}
 			<div className="col-2">
 				<img className="img-fluid rounded-circle"
-					src={actions.getImage(item.id)}
+					src="https://fastly.picsum.photos/id/888/500/500.jpg?hmac=193ABLdwiXPqJB9iujE0eQNt69xyAdyco2UA2yjEAcY"
 				/>
 			</div>
 			{/* contact info */}

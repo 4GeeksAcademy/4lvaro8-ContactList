@@ -25,12 +25,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({...getStore,inputs: {}})
 			},
 
-			getImage: (id) => (
-				id % 2 === 0
-				? getStore().images[0]
-				: getStore().images[1]
-			),
-
 			createList: () => {
 
 				fetch(`https://playground.4geeks.com/contact/agendas/${slug}`, {

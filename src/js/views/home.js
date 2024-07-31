@@ -9,7 +9,7 @@ function Home() {
 	return(
 	<>
 	<div className="py-3 d-flex justify-content-end">
-		<Link to="/NewContact" className="btn btn-primary" type="button">
+		<Link to="/NewContact" className="btn btn-success me-4 ms-3" type="button">
 			Add new contact
 		</Link>
 	</div>

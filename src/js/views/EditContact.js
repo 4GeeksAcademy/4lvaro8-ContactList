@@ -14,7 +14,7 @@ function EditContact() {
 		{/* image */}
 		<div className="m-5 mx-auto col-2">
 				<img className="img-fluid rounded-circle"
-					src={actions.getImage(store.contacts[index].id)}
+					src="https://fastly.picsum.photos/id/888/500/500.jpg?hmac=193ABLdwiXPqJB9iujE0eQNt69xyAdyco2UA2yjEAcY"
 				/>
 		</div>
 		{/* name */}
