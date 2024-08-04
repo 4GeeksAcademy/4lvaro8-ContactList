@@ -9,8 +9,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			contacts: [],
 			inputs: {},
 			images: [
-				"https://img.freepik.com/free-vector/gradient-retro-smiley-emoji-illustration_23-2151041644.jpg?t=st=1712163681~exp=1712164281~hmac=09471ec561627f5b087b22d7b0060ba83aaf488f9f3091da4422ccaaee678bde",
-				"https://img.freepik.com/free-vector/gradient-hungry-emoji-illustration_23-2151041567.jpg?w=740&t=st=1712163828~exp=1712164428~hmac=12795208d750087d3954373c76c06deb7317688a918018219c10ada26dec2f06",
+				"https://fastly.picsum.photos/id/888/500/500.jpg?hmac=193ABLdwiXPqJB9iujE0eQNt69xyAdyco2UA2yjEAcY",
 			],
 		},
 		actions: {
@@ -20,6 +19,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({...getStore,
 						  inputs: {...getStore().inputs, [name]: value}})
 			},
+			
+			getImage: (id) => (
+				id % 1 === 0
+				? getStore().images[0]
+				: 0
+			),
+
 
 			resetInput: () => {
 				setStore({...getStore,inputs: {}})
